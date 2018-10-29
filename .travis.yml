@@ -1,5 +1,10 @@
-sudo: required
-services:
-- docker
+language:
+  node_js
+node_js:
+ - "node"
+ - "8"
+install:
+ - npm install
 script:
-- docker-compose up -d
+ - echo 'npm test temporarily disabled'
+ - node app.js
