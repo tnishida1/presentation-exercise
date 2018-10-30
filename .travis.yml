@@ -5,7 +5,7 @@ node_js:
 install:
 - npm install
 script:
-- noob app.js
+- node app.js
 deploy:
   provider: heroku
   api_key:
