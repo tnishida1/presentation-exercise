@@ -1,9 +1,15 @@
-language:
-  node_js
+language: node_js
 node_js:
- - "node"
- - "8"
+- node
+- '8'
 install:
- - npm install
+- npm install
 script:
- - noob app.js
+- noob app.js
+deploy:
+  provider: heroku
+  api_key:
+    secure: Nc3F1EfNImVAwmMf5Mc/5yveILHc8D4dt7Ms6fXMTvv13tM/BRVnQZTyJovtQE6/kGvBoQEV7m+u2notceaiseYH1QbOSJE5NQqkUZxRPhILKX5RHVveUDy/H8OGWre82a85prtZAAiMM89RcpMwuB1vW6sJ2P3Tv6c++2w7rCvoGrIh4cFbQCKG3vOa5qzMQky2y//MxZyJOW5L9q7JEv2TT217tz0F2eccuW+D++2Oytj8Pj1OkvHIfzqkbI3UorQqcg90qEZOE0n7zqQE/tyL3QEff0IQ2MTpPtvJP+R+/9H//bMgaoMQLlDfUX228pA0yHqyos+/QXTJzM08mGvgzhdcgUu7ZpasaQvzC5VPbd92+KBCO/HLbu7kPk0KcEwzm4Y8agD2aepcUB2UZCsNdrcuqLS5N19vvJtgZjiYfWCP1zM6NqhxJfk0w9sfZn/LMbcW9KbL7vruNRyIx3uGByuL4KxdY4untK4DBWkydo8/PpPikxMKZvFMrwFegqDcAl+UZ4cgw8rq+RLqC27I0A7ImtH44e5XiLHQjutmanZYMS3ZlnMKXuvp5p3J0EiYqIrWFZETpY5yh7IwFD1sH9afMfkLD2Pe5O7/aMwC9A2oOXsPOmIvFVtAoDQCowl5o5aIzJJieF4eu5CYoqYx2+MfgVaGikGTnO9A8oU=
+  app: presentation-exercise
+  on:
+    repo: tnishida1/presentation-exercise
