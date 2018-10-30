@@ -7,9 +7,9 @@ install:
 script:
 - echo 'test'
 deploy:
-  provider: heroku
-  api_key:
-   - secure: IyIdaya029IvbA0dc9cPT81wUprXbQ8F/h5AoeLx2qRcQzv6wxwRNVOPIWSZr+yi+B7l+rvOhmdnIpO0tXpYapGF4ioDrf3oLzpBqPpXasiCAcDduV06mymBx8vqYvJpb0FlEC87F+Phh4HB/LSsSPTLBgDpuiuyeeSuM9vjoQ5Z934kcRAwHyQdoJK3KmytmdeLmCCbSPT49HQK1A7rTs8B4QNAwBtvpyFmv/5fugmd1jpxKdar0In2+wjd21L8Oy/P1MKU/ZAPuU6+HxO2Ak/wx650y+szL7M3v8B4gaoNFlsn9q8kShxCxGgXvVPdbkk0SPcOwakZRwpuAFTu9F08DGk9a2leiBa9XZri27E44WIzAWJkmHzd3uZLvAMXr717486jUdbucV3XJ4hPrxr0PqfjRWBwCdNUii/7E7zfT9M2iqDQgBjzKirmjKSRYex+ZuMKEnvJB/tTjkIMBgPaI5Szot8O2q30FdE4bfB6+bb7fXaWEkoaAmbr5aXZCzkqXfxWJ+nUqQ1PDpfZAUhT8JsSpNmFikHz0h9wZMtN2GIfhKDv7dqjHxEPMdwILY9nzUmFmUUOPhNv5viL6Tr1HPf/md+RLnBnm5yZ35IzsCvzz9qjIooXGkCmxjQZ20eN/k26cc3oQ3uWEPn472nvy2GSVCjPBGk+mEtSaRc=
-  app: presentation-exercise
+  provider: pages
+  skip-cleanup: true
+  github-token: "key" # Set in the settings page of your repository, as a secure variable
+  keep-history: true
   on:
-    repo: tnishida1/presentation-exercise
+    branch: master
